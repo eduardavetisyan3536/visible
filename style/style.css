@@ -1,0 +1,80 @@
+@import url(./reset.css);
+
+body {
+  background-color: rgb(178, 229, 243);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+}
+
+.open {
+  position: absolute;
+  bottom: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px rgb(0, 0, 0);
+}
+
+.hid {
+  background-color: white;
+  width: 450px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  box-shadow: 3px 5px 10px black;
+  position: relative;
+  visibility: hidden;
+  z-index: 9999;
+}
+
+.hid p {
+  color: gray;
+}
+
+.hid input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 5px;
+}
+
+.persBtn {
+  width: 100%;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.pers {
+  background-image: url(../img/pers.png);
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+.vis {
+  position: absolute;
+  right: 25px;
+  font-size: 25px;
+}
+#see{
+    position: absolute;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    visibility: hidden;
+}
